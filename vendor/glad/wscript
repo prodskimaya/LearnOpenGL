@@ -1,0 +1,8 @@
+def options(opt):
+	options.load("compiler_c")
+
+def configure(conf):
+	conf.load("compiler_c")
+
+def build(bld):
+	bld.stlib(target="glad", source="src/glad.c", includes="include")
